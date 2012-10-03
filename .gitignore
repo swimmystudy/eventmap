@@ -1,0 +1,16 @@
+*.DS_Store
+*~
+*.bak
+Thumbs.db
+desktop.ini
+.DS_Store
+.project
+.tmpoj
+lib/cakephp/app/logs/**/*
+lib/cakephp/app/cache/**/*
+lib/cakephp/app/tmp/**/*
+build
+nbproject/
+.idea
+!empty
+!.gitkeep
