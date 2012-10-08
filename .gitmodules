@@ -1,0 +1,3 @@
+[submodule "lib/cakephp/plugins/TwitterBootstrap"]
+	path = lib/cakephp/plugins/TwitterBootstrap
+	url = git://github.com/slywalker/TwitterBootstrap.git
