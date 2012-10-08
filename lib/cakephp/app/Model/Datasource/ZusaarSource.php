@@ -1,11 +1,11 @@
 <?php
 App::uses('HttpSocket', 'Network/Http');
 
-class AtndSource extends DataSource {
+class ZusaarSource extends DataSource {
 
 /**
  * [$params description]
- * @link http://api.atnd.org/#events-url
+ * @link http://www.zusaar.com/doc/api.html
  * @var array
  */
     public $params = array(
@@ -26,7 +26,7 @@ class AtndSource extends DataSource {
     );
 /**
  * [$user_params description]
- * @link http://api.atnd.org/#users
+ * @link http://www.zusaar.com/doc/api.html
  * @var array
  */
     public $user_params = array(
@@ -36,7 +36,6 @@ class AtndSource extends DataSource {
         'twitter_id',
         'owner_id',
         'owner_nickname',
-        'owner_twitter_id',
         'start',
         'count',
         'format',

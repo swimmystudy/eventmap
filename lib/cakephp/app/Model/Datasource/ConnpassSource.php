@@ -1,11 +1,11 @@
 <?php
 App::uses('HttpSocket', 'Network/Http');
 
-class AtndSource extends DataSource {
+class ConnpassSource extends DataSource {
 
 /**
  * [$params description]
- * @link http://api.atnd.org/#events-url
+ * @link http://connpass.com/about/api/
  * @var array
  */
     public $params = array(
@@ -14,34 +14,13 @@ class AtndSource extends DataSource {
         'keyword_or',
         'ym',
         'ymd',
-        'user_id',
         'nickname',
-        'twitter_id',
-        'owner_id',
         'owner_nickname',
-        'owner_twitter_id',
+        'series_id',
         'start',
         'count',
         'format',
     );
-/**
- * [$user_params description]
- * @link http://api.atnd.org/#users
- * @var array
- */
-    public $user_params = array(
-        'event_id',
-        'user_id',
-        'nickname',
-        'twitter_id',
-        'owner_id',
-        'owner_nickname',
-        'owner_twitter_id',
-        'start',
-        'count',
-        'format',
-    );
-
 
 
 /**
