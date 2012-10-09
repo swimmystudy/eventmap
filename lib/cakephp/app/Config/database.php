@@ -32,6 +32,12 @@ class DATABASE_CONFIG {
 	public $atnd = array(
 		'datasource' => 'AtndSource',
 	);
+	public $zusaar = array(
+		'datasource' => 'ZusaarSource',
+	);
+	public $connpass = array(
+		'datasource' => 'ConnpassSource',
+	);
 
 
 
