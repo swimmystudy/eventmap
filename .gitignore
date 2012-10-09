@@ -6,9 +6,31 @@ desktop.ini
 .DS_Store
 .project
 .tmpoj
-lib/cakephp/app/logs/**/*
-lib/cakephp/app/cache/**/*
-lib/cakephp/app/tmp/**/*
+
+
+#################
+# cake
+#################
+# Cake TMP Dirs
+lib/cakephp/*/tmp/**/*
+
+
+lib/cakephp/*/tmp/cache/*
+!lib/cakephp/*/tmp/cache/
+!lib/cakephp/*/tmp/cache/empty
+
+lib/cakephp/*/tmp/cache/models/*
+!lib/cakephp/*/tmp/cache/models/
+!lib/cakephp/*/tmp/cache/models/empty
+
+lib/cakephp/*/tmp/cache/persistent/*
+!lib/cakephp/*/tmp/cache/persistent/
+!lib/cakephp/*/tmp/cache/persistent/empty
+
+lib/cakephp/*/tmp/cache/views/*
+!lib/cakephp/*/tmp/cache/views/
+!lib/cakephp/*/tmp/cache/views/empty
+
 build
 nbproject/
 .idea
