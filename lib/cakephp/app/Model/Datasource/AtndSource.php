@@ -3,6 +3,10 @@ App::uses('HttpSocket', 'Network/Http');
 
 class AtndSource extends DataSource {
 
+
+    public $format = 'json';
+
+
 /**
  * [$params description]
  * @link http://api.atnd.org/#events-url
@@ -41,45 +45,6 @@ class AtndSource extends DataSource {
         'count',
         'format',
     );
-
-
-
-/**
- * An optional description of your datasource
- */
-    public $description = 'A far away datasource';
-
-/**
- * Our default config options. These options will be customized in our
- * ``app/Config/database.php`` and will be merged in the ``__construct()``.
- */
-    public $config = array(
-        'apiKey' => '',
-    );
-
-/**
- * If we want to create() or update() we need to specify the fields
- * available. We use the same array keys as we do with CakeSchema, eg.
- * fixtures and schema migrations.
- */
-    protected $_schema = array(
-        'id' => array(
-            'type' => 'integer',
-            'null' => false,
-            'key' => 'primary',
-            'length' => 11,
-        ),
-        'name' => array(
-            'type' => 'string',
-            'null' => true,
-            'length' => 255,
-        ),
-        'message' => array(
-            'type' => 'text',
-            'null' => true,
-        ),
-    );
-
 /**
  * Create our HttpSocket and handle any config tweaks.
  */
@@ -102,28 +67,81 @@ class AtndSource extends DataSource {
     }
 
 /**
- * describe() tells the model your schema for ``Model::save()``.
- *
- * You may want a different schema for each model but still use a single
- * datasource. If this is your case then set a ``schema`` property on your
- * models and simply return ``$Model->schema`` here instead.
+ * API用に配列を整形
+ * @param  [type] $conditions [description]
+ * @return [type]
  */
-    public function describe(Model $Model) {
-        return $this->_schema;
+    public function buildQuery($conditions){
+        $return = array();
+        //キーワード
+        if(isset($conditions['keyword']) && !empty($conditions['keyword'])){
+            //複数キーワードをスペースで配列に
+            $keyword = urldecode($conditions['keyword']);
+            $keyword = mb_convert_kana($keyword,'rns','utf-8');
+            $keyword = preg_split("/[\s,]+/",$keyword);
+            if($conditions['type']=='or'){
+                $return['keyword_or'] = $keyword;
+            }
+            if($conditions['type']=='and'){
+                $return['keyword'] = $keyword;
+            }
+        }
+        //日付
+        if(isset($conditions['start_day']) && !empty($conditions['start_day'])){
+            $start = $this->prepareDateFormat($conditions['start_day']);
+            if($start){
+                if(count($start) == 2){
+                    $return['ym'][] = $start['y'].$start['m'];
+                }
+                if(count($start) == 3){
+                    $return['ymd'][] = $start['y'].$start['m'].$start['d'];
+                }
+            }
+        }
+        //終わりも指定されている
+        if(isset($conditions['end_day']) && !empty($conditions['end_day'])){
+            $end = $this->prepareDateFormat($conditions['end_day']);
+            if($end){
+                if(count($end) == 2){
+                    $return['ym'][] = $end['y'].$end['m'];
+                }
+                if(count($end) == 3){
+                    $return['ymd'][] = $end['y'].$end['m'].$end['d'];
+                }
+            }
+        }
+        if(array_key_exists('format',$conditions)){
+            $this->format = $conditions['format'];
+        }
+        $return['format'] = $this->format;
+
+        //最大値も固定?
+        $return['count'] = 10;
+
+        return $return;
+    }
+/**
+ * 日付の処理を整形する
+ * @return array('y'=>'','m'=>'','d'=>'') or false
+ */
+    public function prepareDateFormat($string){
+        $tmp = explode('/',$string);
+        if(!is_array($tmp)) return false;
+        if(count($tmp) == 2){
+            return array(
+                'y'=>$tmp[0],
+                'm'=>$tmp[1],
+            );
+        }
+        if(count($tmp) == 3){
+            return array(
+                'y'=>$tmp[0],
+                'm'=>$tmp[1],
+                'd'=>$tmp[2],
+            );
+        }
     }
 
-/**
- * calculate() is for determining how we will count the records and is
- * required to get ``update()`` and ``delete()`` to work.
- *
- * We don't count the records here but return a string to be passed to
- * ``read()`` which will do the actual counting. The easiest way is to just
- * return the string 'COUNT' and check for it in ``read()`` where
- * ``$data['fields'] == 'COUNT'``.
- */
-    public function calculate(Model $Model, $func, $params = array()) {
-        return 'COUNT';
-    }
 
 /**
  * Implement the R in CRUD. Calls to ``Model::find()`` arrive here.
@@ -142,50 +160,15 @@ class AtndSource extends DataSource {
          * Now we get, decode and return the remote data.
          */
         // $data['conditions']['apiKey'] = $this->config['apiKey'];
-        $response = $this->Http->get('http://api.atnd.org/events/', $data['conditions']);
-        return array($Model->alias => $response);
-    }
 
-/**
- * Implement the C in CRUD. Calls to ``Model::save()`` without $Model->id
- * set arrive here.
- */
-    public function create(Model $Model, $fields = array(), $values = array()) {
-        $data = array_combine($fields, $values);
-        $data['apiKey'] = $this->config['apiKey'];
-        $json = $this->Http->post('http://example.com/api/set.json', $data);
-        $res = json_decode($json, true);
-        if (is_null($res)) {
-            $error = json_last_error();
-            throw new CakeException($error);
+        //パラメーター整形
+        $params = $this->buildQuery($data['conditions']);
+        $response = $this->Http->get('http://api.atnd.org/events/', $params);
+        $body = $response->body();
+        if($this->format ==='json'){
+            return json_decode($body,true);
         }
-        return true;
-    }
-
-/**
- * Implement the U in CRUD. Calls to ``Model::save()`` with $Model->id
- * set arrive here. Depending on the remote source you can just call
- * ``$this->create()``.
- */
-    public function update(Model $Model, $fields = array(), $values = array()) {
-        return $this->create($Model, $fields, $values);
-    }
-
-/**
- * Implement the D in CRUD. Calls to ``Model::delete()`` arrive here.
- */
-    public function delete(Model $Model, $conditions = null) {
-        $id = $conditions[$Model->alias . '.id'];
-        $json = $this->Http->get('http://example.com/api/remove.json', array(
-            'id' => $id,
-            'apiKey' => $this->config['apiKey'],
-        ));
-        $res = json_decode($json, true);
-        if (is_null($res)) {
-            $error = json_last_error();
-            throw new CakeException($error);
-        }
-        return true;
+        return $body;
     }
 
 }

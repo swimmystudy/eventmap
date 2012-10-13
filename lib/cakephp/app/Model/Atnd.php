@@ -5,6 +5,6 @@ class Atnd extends Model {
 
 	public $useDbConfig = 'atnd';
 
-	public $useTable = true;
+	public $useTable = false;
 
 }

@@ -1,6 +1,12 @@
 <?php
 App::uses('AtndModel', 'Model');
 
+
+class TestModel extends Model(){
+	public $useDbConfig = 'atnd';
+	public $useTable = false;
+}
+
 /**
  * Application model for Cake.
  *
@@ -24,7 +30,6 @@ class AtndTestCase extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->Atnd = ClassRegistry::init('Atnd');
 	}
 
 /**
@@ -33,7 +38,6 @@ class AtndTestCase extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->Atnd);
 		parent::tearDown();
 	}
 /**
@@ -42,7 +46,8 @@ class AtndTestCase extends CakeTestCase {
  * 
  */
 	public function twitterID(){
-		var_dump($this->Atnd);
+		$TestModel = new TestModel();
+		var_dump($TestModel);
 	}
 
 
