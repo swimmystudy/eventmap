@@ -1,0 +1,39 @@
+/* 日付表示領域 */
+.entry-date-top {
+    text-align: center;
+    color: #FFFFFF;
+    background: url(/* 画像のパスを指定 */) no-repeat top;
+    height: 100px;
+    float: left;
+    width:70px;
+    margin-right:20px;
+}
+
+/* 日付（月）表示領域 */
+.entry-date-top .entry-month {
+    display: block;
+    padding-top: 0px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #FFFFFF;
+    width: 70px;
+}
+
+/* 日付（日）表示領域 */
+.entry-date-top .entry-day {
+    display: block;
+    padding-top: 2px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 25px;
+    width: 70px;
+    height: 27px;
+    margin: 0;
+}
+
+/* 日付（年）表示領域 */
+.entry-date-top .entry-year {
+    color: #000000;
+    margin-top: 5px;
+    font-size: 10px;
+}
