@@ -33,7 +33,6 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $layout = 'TwitterBootstrap.default';
 
     public $helpers = array(
         'Session',

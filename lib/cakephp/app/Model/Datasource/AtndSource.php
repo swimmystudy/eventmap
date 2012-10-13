@@ -76,20 +76,20 @@ class AtndSource extends DataSource {
             $keyword = urldecode($conditions['keyword']);
             $keyword = mb_convert_kana($keyword,'rns','utf-8');
             $keyword = preg_split("/[\s,]+/",$keyword);
-            if($conditions['type']=='or'){
+            if($conditions['search_type']=='or'){
                 foreach ($keyword as $key => $value) {
                     $return .= 'keyword_or='.$value.'&';
                 }
             }
-            if($conditions['type']=='and'){
+            if($conditions['search_type']=='and'){
                 foreach ($keyword as $key => $value) {
                     $return .= 'keyword='.$value.'&';
                 }
             }
         }
         //場所
-        if(isset($conditions['place']) && !empty($conditions['place'])){
-            $return .= 'keyword='.$conditions['place'].'&';
+        if(isset($conditions['pref']) && !empty($conditions['pref'])){
+            $return .= 'keyword='.$conditions['pref'].'&';
         }
 
         //日付
