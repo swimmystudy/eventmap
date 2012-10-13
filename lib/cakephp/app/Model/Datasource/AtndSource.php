@@ -1,6 +1,4 @@
 <?php
-App::uses('HttpSocket', 'Network/Http');
-
 class AtndSource extends DataSource {
 
 
@@ -50,7 +48,6 @@ class AtndSource extends DataSource {
  */
     public function __construct($config) {
         parent::__construct($config);
-        $this->Http = new HttpSocket();
     }
 
 /**
@@ -72,7 +69,7 @@ class AtndSource extends DataSource {
  * @return [type]
  */
     public function buildQuery($conditions){
-        $return = array();
+        $return = '';
         //キーワード
         if(isset($conditions['keyword']) && !empty($conditions['keyword'])){
             //複数キーワードをスペースで配列に
@@ -80,44 +77,40 @@ class AtndSource extends DataSource {
             $keyword = mb_convert_kana($keyword,'rns','utf-8');
             $keyword = preg_split("/[\s,]+/",$keyword);
             if($conditions['type']=='or'){
-                $return['keyword_or'] = $keyword;
+                foreach ($keyword as $key => $value) {
+                    $return .= 'keyword_or='.$value.'&';
+                }
             }
             if($conditions['type']=='and'){
-                $return['keyword'] = $keyword;
+                foreach ($keyword as $key => $value) {
+                    $return .= 'keyword='.$value.'&';
+                }
             }
         }
+        //場所
+        if(isset($conditions['place']) && !empty($conditions['place'])){
+            $return .= 'keyword='.$conditions['place'].'&';
+        }
+
         //日付
-        if(isset($conditions['start_day']) && !empty($conditions['start_day'])){
-            $start = $this->prepareDateFormat($conditions['start_day']);
+        if(isset($conditions['date']) && !empty($conditions['date'])){
+            $start = $this->prepareDateFormat($conditions['date']);
             if($start){
                 if(count($start) == 2){
-                    $return['ym'][] = $start['y'].$start['m'];
+                    $return .= 'ym='.$start['y'].$start['m'].'&';
                 }
                 if(count($start) == 3){
-                    $return['ymd'][] = $start['y'].$start['m'].$start['d'];
-                }
-            }
-        }
-        //終わりも指定されている
-        if(isset($conditions['end_day']) && !empty($conditions['end_day'])){
-            $end = $this->prepareDateFormat($conditions['end_day']);
-            if($end){
-                if(count($end) == 2){
-                    $return['ym'][] = $end['y'].$end['m'];
-                }
-                if(count($end) == 3){
-                    $return['ymd'][] = $end['y'].$end['m'].$end['d'];
+                    $return .= 'ymd='.$start['y'].$start['m'].'&';
                 }
             }
         }
         if(array_key_exists('format',$conditions)){
             $this->format = $conditions['format'];
         }
-        $return['format'] = $this->format;
+        $return .= 'format='.$this->format.'&';
 
         //最大値も固定?
-        $return['count'] = 10;
-
+        $return .= 'count=100';
         return $return;
     }
 /**
@@ -163,12 +156,11 @@ class AtndSource extends DataSource {
 
         //パラメーター整形
         $params = $this->buildQuery($data['conditions']);
-        $response = $this->Http->get('http://api.atnd.org/events/', $params);
-        $body = $response->body();
+        $result = file_get_contents('http://api.atnd.org/events/?'.$params);
         if($this->format ==='json'){
-            return json_decode($body,true);
+            return json_decode($result,true);
         }
-        return $body;
+        return $result;
     }
 
 }
