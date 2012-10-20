@@ -27,6 +27,7 @@ class EventCacheController extends AppController {
         pr("ヒット　：　" . count($result));
         foreach ($result as $event) {
             pr('------------------------------');
+            pr('イベントID : ' . $event['EventCache']['event_id']);
             pr('タイトル : ' . $event['EventCache']['title']);
             pr('URL : ' . $event['EventCache']['event_url']);
             pr('場所 : ' . $event['EventCache']['place']);
@@ -44,7 +45,8 @@ class EventCacheController extends AppController {
             $this->EventCache->update($sp, $url);
         }
         
-        $this->EventCache->delete_old_cache();
+        // 過去のイベント情報も保持しておく
+        //$this->EventCache->delete_old_cache();
         
         return new CakeResponse(array('body' => true));
     }

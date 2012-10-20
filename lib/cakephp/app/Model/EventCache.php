@@ -66,6 +66,7 @@ class EventCache extends Model {
         if($term == 0){return true;}
         $events = $this->get_events($url, $term);
         foreach ($events as $event){
+            $event['event_id'] = $sp . "_" . $event['event_id'];
             $event['service_provider'] = $sp;
             $this->save(array('EventCache' => $event));
         }
