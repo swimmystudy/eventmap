@@ -4,15 +4,14 @@
 
 ## 使い方
 ### Git
-以下のコマンドでリポジトリをcloneします。
-
+以下のコマンドでリポジトリをcloneします。  
 `git clone --recursive git@github.com:swimmystudy/eventmap.git`
 
 
 ### MySQL
 eventmapという名称でデータベースとユーザを作成します。
 
-以下のコマンドを実行し、DBを最新の状態にします。
+以下のコマンドを実行し、DBを最新の状態にします。  
 `cd eventmap/lib/cakephp/app/`  
 `Console/cake Migrations.migration run all`
 
