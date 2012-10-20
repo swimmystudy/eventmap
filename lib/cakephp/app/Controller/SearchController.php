@@ -20,7 +20,6 @@ class SearchController extends AppController {
 		parent::beforeFilter();
 	}
 
-
 	public function index(){
 		//月別に
 		// $tweets = $this->Atnd->find('all',array(
@@ -39,6 +38,12 @@ class SearchController extends AppController {
 			'conditions'=>$this->request->query
 		));
 		var_dump($result);exit;
+	}
+
+	public function dummy(){
+		pr($this->request->query);
+		$data = array(
+		);
 	}
 
 }
