@@ -76,7 +76,7 @@ class ConnpassSource extends DataSource {
  * listSources() is for caching. You'll likely want to implement caching in
  * your own way with a custom datasource. So just ``return null``.
  */
-    public function listSources() {
+    public function listSources($data = NULL) {
         return null;
     }
 
@@ -87,7 +87,7 @@ class ConnpassSource extends DataSource {
  * datasource. If this is your case then set a ``schema`` property on your
  * models and simply return ``$Model->schema`` here instead.
  */
-    public function describe(Model $Model) {
+    public function describe($model) {
         return $this->_schema;
     }
 
@@ -107,22 +107,22 @@ class ConnpassSource extends DataSource {
 /**
  * Implement the R in CRUD. Calls to ``Model::find()`` arrive here.
  */
-    public function read(Model $Model, $data = array()) {
+    public function read(Model $model, $queryData = array(), $recursive = null) {
         /**
          * Here we do the actual count as instructed by our calculate()
          * method above. We could either check the remote source or some
          * other way to get the record count. Here we'll simply return 1 so
          * ``update()`` and ``delete()`` will assume the record exists.
          */
-        if ($data['fields'] == 'COUNT') {
+        if ($queryData['fields'] == 'COUNT') {
             return array(array(array('count' => 1)));
         }
         /**
          * Now we get, decode and return the remote data.
          */
         // $data['conditions']['apiKey'] = $this->config['apiKey'];
-        $response = $this->Http->get('http://api.atnd.org/events/', $data['conditions']);
-        return array($Model->alias => $response);
+        $response = $this->Http->get('http://connpass.com/api/v1/event/', $queryData['conditions']);
+        return array($model->alias => $response);
     }
 
 /**
@@ -132,7 +132,7 @@ class ConnpassSource extends DataSource {
     public function create(Model $Model, $fields = array(), $values = array()) {
         $data = array_combine($fields, $values);
         $data['apiKey'] = $this->config['apiKey'];
-        $json = $this->Http->post('http://example.com/api/set.json', $data);
+        $json = $this->Http->post('http://connpass.com/api/v1/event/set.json', $data);
         $res = json_decode($json, true);
         if (is_null($res)) {
             $error = json_last_error();
@@ -146,8 +146,8 @@ class ConnpassSource extends DataSource {
  * set arrive here. Depending on the remote source you can just call
  * ``$this->create()``.
  */
-    public function update(Model $Model, $fields = array(), $values = array()) {
-        return $this->create($Model, $fields, $values);
+    public function update(Model $model, $fields = NULL, $values = NULL, $conditions = NULL) {
+        return $this->create($model, $fields, $values);
     }
 
 /**
