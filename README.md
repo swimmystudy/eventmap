@@ -1,5 +1,5 @@
 # EventMap by SwimmyStudy
-アプリケーションを作りながら色々勉強しようというプロジェクト
+アプリケーションを作りながら色々勉強しようというプロジェクト  
 とりあえず簡単なREADMEを作成
 
 ## 使い方
@@ -12,8 +12,10 @@
 ### MySQL
 eventmapという名称でデータベースとユーザを作成します。
 
+以下のコマンドを実行し、DBを最新の状態にします。
 `cd eventmap/lib/cakephp/app/`  
 `Console/cake Migrations.migration run all`
+
 
 ### キャッシュの更新
 以下にアクセスするとキャッシュを更新できます。（localhostで実行する例）  
