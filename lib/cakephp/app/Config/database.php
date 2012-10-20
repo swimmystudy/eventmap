@@ -6,9 +6,9 @@ class DATABASE_CONFIG {
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
 		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'database_name',
+		'login' => 'eventmap',
+		'password' => 'eventmap',
+		'database' => 'eventmap',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
