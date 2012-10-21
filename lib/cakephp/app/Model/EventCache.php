@@ -3,7 +3,6 @@ App::uses('AppModel', 'Model');
 
 class EventCache extends Model {
     public $useTable = 'event_cache';
-    public $primaryKey = 'event_id';
     
     public function custom_find($request = null) {
         //{ ["keyword"]=>"aaaa" ["type"]=>"or" ["start_day"]=>"2012/10/01" ["end_day"]=>"2012/11/01" }
@@ -66,9 +65,17 @@ class EventCache extends Model {
         if($term == 0){return true;}
         $events = $this->get_events($url, $term);
         foreach ($events as $event){
-            $event['event_id'] = $sp . "_" . $event['event_id'];
-            $event['service_provider'] = $sp;
+            $result = $this->find('first', array('conditions' => array(
+                    'event_id' => $event['event_id'],
+                    'service_provider' => $sp
+                    )));
+            if($result){
+                $this->id = $result['EventCache']['id'];
+            } else {
+                $event['service_provider'] = $sp;
+            }
             $this->save(array('EventCache' => $event));
+            $this->create();
         }
         return true;
     }
