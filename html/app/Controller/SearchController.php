@@ -41,9 +41,19 @@ class SearchController extends AppController {
 	}
 
 	public function dummy(){
-		pr($this->request->query);
 		$data = array(
+			array(
+				'event_id'=>'1234',
+				'service_provider'=>'Atnd',
+				'title'=>'テストイベント',
+				'description'=>'説明',
+				'event_url'=>'http://test.com/',
+				'started_at'=>'2012-11-04T08:30:00+09:00',
+				'ended_at'=>'2012-11-04T08:30:00+09:00',
+				'place'=>'福岡県Ruby・コンテンツ産業振興センター',
+			)
 		);
+		// return new CakeResponse();
 	}
 
 }

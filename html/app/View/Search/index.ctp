@@ -6,7 +6,7 @@ $(function(){
         type:"get",
         url: $(this).attr('action') + '?' + $(this).serialize(),
         success:function(data,status){
-            $('#loading').fadeOut(200);
+            $('#loading').fadeOut(200);            
             $("#result").html(data);
         }
         });
@@ -17,7 +17,7 @@ $(function(){
 <div class="container-fluid">
 	<h1>イベントマッププロジェクト</h1>
 	<div class="row-fluid">
-	<?php echo $this->Form->create(false,array('action'=>'dummy','type'=>'get'));?>
+	<?php echo $this->Form->create(false,array('action'=>'request','type'=>'get'));?>
 		<fieldset class="form-inline control-group">
 			<input type="text" name="keyword" value="" >
 			<label for="or" class="radio">

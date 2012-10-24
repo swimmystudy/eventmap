@@ -1,0 +1,625 @@
+2012-10-09 19:38:04 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:38:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:40:23 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:40:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:43:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:43:32 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:46:22 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:46:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:49:44 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:49:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:50:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:50:02 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:50:13 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 19:50:13 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:12:05 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:12:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:23:31 Error: [MissingPluginException] Plugin TwitterBootstrap could not be found.
+#0 /projects/eventmap/lib/cakephp/app/Config/bootstrap.php(145): CakePlugin::load('TwitterBootstra...')
+#1 /projects_php/library/cakephp/lib/Cake/Core/Configure.php(92): include('/projects/event...')
+#2 /projects_php/library/cakephp/lib/Cake/bootstrap.php(142): Configure::bootstrap(true)
+#3 /projects_php/library/cakephp/lib/Cake/Console/ShellDispatcher.php(131): require('/projects_php/l...')
+#4 /projects_php/library/cakephp/lib/Cake/Console/ShellDispatcher.php(101): ShellDispatcher->_bootstrap()
+#5 /projects_php/library/cakephp/lib/Cake/Console/ShellDispatcher.php(57): ShellDispatcher->_initEnvironment()
+#6 /projects_php/library/cakephp/lib/Cake/Console/ShellDispatcher.php(68): ShellDispatcher->__construct(Array)
+#7 /projects_php/library/cakephp/lib/Cake/Console/cake.php(41): ShellDispatcher::run(Array)
+#8 {main}
+2012-10-09 21:45:06 Error: Fatal Error (4): syntax error, unexpected '}', expecting ')' in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 32]
+2012-10-09 21:45:06 Error: [FatalErrorException] syntax error, unexpected '}', expecting ')'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 32, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 32, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:45:07 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:45:07 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:10 Error: Fatal Error (4): syntax error, unexpected ';' in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 26]
+2012-10-09 21:47:10 Error: [FatalErrorException] syntax error, unexpected ';'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 26, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 26, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:47:11 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:11 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:21 Error: Fatal Error (1): Call to a member function find() on a non-object in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 26]
+2012-10-09 21:47:21 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/projects/event...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/projects/event...', 26, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/projects/event...', 26, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:47:21 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:21 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:46 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:47:46 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:48:22 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:48:22 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:48:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:48:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:53:02 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:53:02 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:54:41 Error: Fatal Error (4): syntax error, unexpected T_RETURN in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 119]
+2012-10-09 21:54:41 Error: [FatalErrorException] syntax error, unexpected T_RETURN
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 119)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 119, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 119, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:54:41 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:54:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-10 00:24:44 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-10 00:24:44 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 01:51:40 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-11 01:51:40 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:12:46 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:12:46 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:13:52 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:13:52 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:28:05 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:28:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:32:29 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:32:29 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:32:40 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:32:41 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:38:43 Error: Fatal Error (4): syntax error, unexpected '=', expecting ')' in [/projects/eventmap/lib/cakephp/app/View/Search/index.ctp, line 11]
+2012-10-13 13:38:43 Error: [FatalErrorException] syntax error, unexpected '=', expecting ')'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 11)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 11, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 11, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 13:38:43 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:38:43 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:39:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:39:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:39:35 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:39:35 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:40:35 Error: [MissingActionException] Action SearchController::search() could not be found.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-13 13:40:36 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:40:36 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:40:53 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 13:40:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:40:53 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:41:24 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 13:41:24 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:41:24 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:43:05 Error: Fatal Error (4): syntax error, unexpected '}' in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 41]
+2012-10-13 13:43:05 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 41)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 41, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 41, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 13:43:05 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:43:05 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:43:14 Error: Fatal Error (1): Call to a member function find() on a non-object in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 38]
+2012-10-13 13:43:14 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/projects/event...', 38)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/projects/event...', 38, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/projects/event...', 38, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 13:43:15 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 13:43:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:42:53 Error: Fatal Error (1): Call to undefined method AtndSource::buildQuery() in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 94]
+2012-10-13 14:42:53 Error: [FatalErrorException] Call to undefined method AtndSource::buildQuery()
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/projects/event...', 94)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/projects/event...', 94, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/projects/event...', 94, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 14:42:53 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:42:53 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:52:33 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:52:33 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:52:33 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:52:47 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:52:47 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:52:47 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:54:25 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:54:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:54:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:54:34 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:54:34 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:54:34 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:03 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:55:04 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:04 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:26 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/request.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-13 14:55:27 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:27 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:43 Error: Fatal Error (4): syntax error, unexpected '}' in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 70]
+2012-10-13 14:55:43 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 70)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 70, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 70, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 14:55:43 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 14:55:43 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 15:08:31 Error: Fatal Error (4): syntax error, unexpected '}' in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 86]
+2012-10-13 15:08:31 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 86)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 86, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 86, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 15:08:32 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 15:08:32 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 15:38:54 Error: Fatal Error (1): Call to undefined method AtndSource::body() in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 168]
+2012-10-13 15:38:54 Error: [FatalErrorException] Call to undefined method AtndSource::body()
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/projects/event...', 168)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/projects/event...', 168, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/projects/event...', 168, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 15:38:55 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 15:38:55 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:07:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:07:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:10:26 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:10:26 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:10:54 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:10:54 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:19:58 Error: Fatal Error (4): syntax error, unexpected T_DNUMBER in [/projects/eventmap/lib/cakephp/app/Model/Datasource/AtndSource.php, line 116]
+2012-10-13 17:19:58 Error: [FatalErrorException] syntax error, unexpected T_DNUMBER
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 116)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 116, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 116, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-13 17:19:59 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 17:19:59 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:08:35 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:08:38 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:08:57 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:11:58 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:03 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:12:15 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-13 18:16:35 Error: [MissingControllerException] Controller class List.htmlController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 15:32:43 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/dummy.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-20 15:59:20 Error: [SocketException] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Network/CakeSocket.php(193): CakeSocket->connect()
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Network/Http/HttpSocket.php(362): CakeSocket->write('GET /api/v1/eve...')
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Network/Http/HttpSocket.php(449): HttpSocket->request(Array)
+#3 /projects/eventmap/lib/cakephp/app/Model/EventCache.php(121): HttpSocket->get('http://connpass...', 'format=json&ym=...')
+#4 /projects/eventmap/lib/cakephp/app/Model/EventCache.php(98): EventCache->request_sp('format=json&ym=...', 'http://connpass...')
+#5 /projects/eventmap/lib/cakephp/app/Model/EventCache.php(67): EventCache->get_events('http://connpass...', 4)
+#6 /projects/eventmap/lib/cakephp/app/Controller/EventCacheController.php(45): EventCache->update('Connpass', 'http://connpass...')
+#7 [internal function]: EventCacheController->update()
+#8 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EventCacheController), Array)
+#9 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EventCacheController), Object(CakeRequest), Object(CakeResponse))
+#11 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-10-20 16:08:14 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/dummy.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-20 16:08:36 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/dummy.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-20 16:08:50 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/dummy.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-20 16:21:43 Error: [MissingControllerException] Controller class AaController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 16:22:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 16:22:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 16:22:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 16:22:13 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-20 17:51:57 Error: [MissingActionException] Action SearchController::img() could not be found.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#2 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-20 17:52:05 Error: [MissingViewException] View file "/projects/eventmap/html/../lib/cakephp//app/View/Search/dummy.ctp" is missing.
+#0 /projects/eventmap/lib/cakephp/lib/Cake/View/View.php(473): View->_getViewFileName(NULL)
+#1 /projects/eventmap/lib/cakephp/lib/Cake/Controller/Controller.php(956): View->render(NULL, NULL)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(SearchController), Object(CakeRequest), Object(CakeResponse))
+#4 /projects/eventmap/html/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-20 17:52:35 Error: Fatal Error (4): syntax error, unexpected '}' in [/projects/eventmap/lib/cakephp/app/Model/Atnd.php, line 38]
+2012-10-20 17:52:35 Error: [FatalErrorException] syntax error, unexpected '}'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 38)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 38, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 38, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-20 18:15:21 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 51]
+2012-10-20 18:15:21 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 51, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 51, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 19:42:02 Error: Fatal Error (4): syntax error, unexpected ',', expecting ')' in [/projects/eventmap/lib/cakephp/app/Controller/SearchController.php, line 51]
+2012-10-24 19:42:02 Error: [FatalErrorException] syntax error, unexpected ',', expecting ')'
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/projects/event...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/projects/event...', 51, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/projects/event...', 51, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 19:44:22 Error: Fatal Error (1): Maximum function nesting level of '100' reached, aborting! in [/projects/eventmap/lib/cakephp/lib/Cake/Network/CakeResponse.php, line 1088]
+2012-10-24 19:44:22 Error: [FatalErrorException] Maximum function nesting level of '100' reached, aborting!
+#0 /projects/eventmap/lib/cakephp/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Maximum functio...', '/projects/event...', 1088)
+#1 [internal function]: ErrorHandler::handleError(1, 'Maximum functio...', '/projects/event...', 1088, Array)
+#2 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Maximum functio...', '/projects/event...', 1088, Array)
+#3 /projects/eventmap/lib/cakephp/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-24 20:03:53 Error: [MissingPluginException] Plugin TwitterBootstrap could not be found.
+#0 /projects/eventmap/html/app/Config/bootstrap.php(145): CakePlugin::load('TwitterBootstra...')
+#1 /projects/eventmap/html/lib/Cake/Core/Configure.php(92): include('/projects/event...')
+#2 /projects/eventmap/html/lib/Cake/bootstrap.php(146): Configure::bootstrap(true)
+#3 /projects/eventmap/html/app/webroot/index.php(77): include('/projects/event...')
+#4 {main}
+2012-10-24 20:03:54 Error: [MissingPluginException] Plugin TwitterBootstrap could not be found.
+#0 /projects/eventmap/html/app/Config/bootstrap.php(145): CakePlugin::load('TwitterBootstra...')
+#1 /projects/eventmap/html/lib/Cake/Core/Configure.php(92): include('/projects/event...')
+#2 /projects/eventmap/html/lib/Cake/bootstrap.php(146): Configure::bootstrap(true)
+#3 /projects/eventmap/html/app/webroot/index.php(77): include('/projects/event...')
+#4 {main}
+2012-10-24 20:03:54 Error: [MissingPluginException] Plugin TwitterBootstrap could not be found.
+#0 /projects/eventmap/html/app/Config/bootstrap.php(145): CakePlugin::load('TwitterBootstra...')
+#1 /projects/eventmap/html/lib/Cake/Core/Configure.php(92): include('/projects/event...')
+#2 /projects/eventmap/html/lib/Cake/bootstrap.php(146): Configure::bootstrap(true)
+#3 /projects/eventmap/html/app/webroot/index.php(77): include('/projects/event...')
+#4 {main}
+2012-10-24 20:07:37 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:07:37 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:07:38 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:08:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:08:18 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:08:18 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:16 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:16 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:16 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:30 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:30 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-24 20:10:30 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /projects/eventmap/html/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}

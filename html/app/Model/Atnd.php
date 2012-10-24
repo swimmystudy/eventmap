@@ -27,10 +27,16 @@ class Atnd extends Model {
 			$tmp = array(
 				'event_id'=>$value['event_id'],
 				'service_provider'=>'Atnd',
-			)
-
+				'title'=>$value['title'],
+				'description'=>$value['description'],
+				'event_url'=>$value['event_url'],
+				'started_at'=>$value['started_at'],
+				'ended_at'=>$value['ended_at'],
+				'place'=>$value['place'],
+			);
+			$return[] = $tmp;
 		}
-		var_dump($results);exit;
+		return $return;
 	}
 /**
  * event cash とのマッピング
