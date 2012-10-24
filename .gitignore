@@ -12,24 +12,25 @@ desktop.ini
 # cake
 #################
 # Cake TMP Dirs
-lib/cakephp/*/tmp/**/*
+html/app/tmp/**/*
 
 
-lib/cakephp/*/tmp/cache/*
-!lib/cakephp/*/tmp/cache/
-!lib/cakephp/*/tmp/cache/empty
+html/app/tmp/cache/*
+!html/app/tmp/cache/
+!html/app/tmp/cache/empty
 
-lib/cakephp/*/tmp/cache/models/*
-!lib/cakephp/*/tmp/cache/models/
-!lib/cakephp/*/tmp/cache/models/empty
+html/app/tmp/cache/models/*
+!html/app/
+!html/app/tmp/cache/models/
+!html/app/tmp/cache/models/empty
 
-lib/cakephp/*/tmp/cache/persistent/*
-!lib/cakephp/*/tmp/cache/persistent/
-!lib/cakephp/*/tmp/cache/persistent/empty
+html/app/tmp/cache/persistent/*
+!html/app/tmp/cache/persistent/
+!html/app/tmp/cache/persistent/empty
 
-lib/cakephp/*/tmp/cache/views/*
-!lib/cakephp/*/tmp/cache/views/
-!lib/cakephp/*/tmp/cache/views/empty
+html/app/tmp/cache/views/*
+!html/app/tmp/cache/views/
+!html/app/tmp/cache/views/empty
 
 build
 nbproject/
