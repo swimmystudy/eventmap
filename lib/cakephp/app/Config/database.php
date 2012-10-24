@@ -5,8 +5,9 @@ class DATABASE_CONFIG {
 	public $default = array(
 		'datasource' => 'Database/Mysql',
 		'persistent' => false,
-		'host' => 'swimmy-swimmy.azva.dotcloud.net',
-                'port' => '38779',
+		//'host' => 'swimmy-swimmy.azva.dotcloud.net',
+                'host' => 'localhost',
+                //'port' => '38779',
 		'login' => 'eventmap',
 		'password' => 'eventmap',
 		'database' => 'eventmap',

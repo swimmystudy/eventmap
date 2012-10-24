@@ -31,4 +31,7 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+    public function __constract() {
+        $this->_datetime = new DateTime;
+    }
 }

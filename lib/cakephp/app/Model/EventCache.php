@@ -4,6 +4,11 @@ App::uses('AppModel', 'Model');
 class EventCache extends Model {
     public $useTable = 'event_cache';
     
+    public function __construct($id = false, $table = null, $ds = null) {
+        $this->Http = new HttpSocket();
+        parent::__construct($id, $table, $ds);
+    }
+    
     public function custom_find($request = null) {
         //{ ["keyword"]=>"aaaa" ["type"]=>"or" ["start_day"]=>"2012/10/01" ["end_day"]=>"2012/11/01" }
         
@@ -62,7 +67,7 @@ class EventCache extends Model {
 
 
     public function update($sp, $url, $term = 4) {
-        if($term == 0){return true;}
+        if($term < 0){return true;}
         $events = $this->get_events($url, $term);
         foreach ($events as $event){
             $result = $this->find('first', array('conditions' => array(
@@ -91,8 +96,8 @@ class EventCache extends Model {
     }
 
     private function get_events($target, $term) {
-        $this->Http = new HttpSocket();
         $now_month = date('Ym');
+        //$now_month = $this->_datetime->format('Ym');
         $params = "format=json&ym=$now_month";
         for ($i = 1; $i < $term; $i++) {
             $ym = date("Ym", strtotime("$now_month +$i month"));

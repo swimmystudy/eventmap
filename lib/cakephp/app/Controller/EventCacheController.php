@@ -16,7 +16,7 @@ class EventCacheController extends AppController {
     public $uses = array('Atnd', 'Connpass', 'EventCache');
     
     public $events_target = array(
-        'Atend' => 'http://api.atnd.org/events/',
+        'Atnd' => 'http://api.atnd.org/events/',
         'Connpass' => 'http://connpass.com/api/v1/event/',
         'Zusaar' => 'http://www.zusaar.com/api/event/'
     );
