@@ -97,6 +97,7 @@ class EventCache extends Model {
 
     private function get_events($target, $term) {
         $now_month = date('Ym');
+        //
         //$now_month = $this->_datetime->format('Ym');
         $params = "format=json&ym=$now_month";
         for ($i = 1; $i < $term; $i++) {
