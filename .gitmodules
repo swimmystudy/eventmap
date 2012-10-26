@@ -1,6 +1,6 @@
 [submodule "html/app/Plugin/TwitterBootstrap"]
 	path = html/app/Plugin/TwitterBootstrap
 	url = git://github.com/slywalker/TwitterBootstrap.git
-[submodule "lib/cakephp/app/Plugin/Migrations"]
-	path = lib/cakephp/app/Plugin/Migrations
+[submodule "html/app/Plugin/Migrations"]
+	path = html/app/Plugin/Migrations
 	url = git://github.com/CakeDC/migrations.git
