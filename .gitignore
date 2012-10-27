@@ -12,25 +12,25 @@ desktop.ini
 # cake
 #################
 # Cake TMP Dirs
-html/app/tmp/**/*
+app/tmp/**/*
 
 
-html/app/tmp/cache/*
-!html/app/tmp/cache/
-!html/app/tmp/cache/empty
+app/tmp/cache/*
+!app/tmp/cache/
+!app/tmp/cache/empty
 
-html/app/tmp/cache/models/*
-!html/app/
-!html/app/tmp/cache/models/
-!html/app/tmp/cache/models/empty
+app/tmp/cache/models/*
+!app/
+!app/tmp/cache/models/
+!app/tmp/cache/models/empty
 
-html/app/tmp/cache/persistent/*
-!html/app/tmp/cache/persistent/
-!html/app/tmp/cache/persistent/empty
+app/tmp/cache/persistent/*
+!app/tmp/cache/persistent/
+!app/tmp/cache/persistent/empty
 
-html/app/tmp/cache/views/*
-!html/app/tmp/cache/views/
-!html/app/tmp/cache/views/empty
+app/tmp/cache/views/*
+!app/tmp/cache/views/
+!app/tmp/cache/views/empty
 
 build
 nbproject/
