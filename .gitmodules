@@ -1,6 +1,6 @@
-[submodule "html/app/Plugin/TwitterBootstrap"]
-	path = html/app/Plugin/TwitterBootstrap
-	url = git://github.com/slywalker/TwitterBootstrap.git
-[submodule "html/app/Plugin/Migrations"]
-	path = html/app/Plugin/Migrations
+[submodule "app/Plugin/Migrations"]
+	path = app/Plugin/Migrations
 	url = git://github.com/CakeDC/migrations.git
+[submodule "app/Plugin/TwitterBootstrap"]
+	path = app/Plugin/TwitterBootstrap
+	url = git://github.com/slywalker/TwitterBootstrap.git
