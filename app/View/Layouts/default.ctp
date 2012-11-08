@@ -23,10 +23,12 @@
 	</head>
 </head>
 <body>
-	<?php echo $this->Session->flash(); ?>
-	<?php echo $this->fetch('content'); ?>
+	<div class="container">
+		<?php echo $this->Session->flash(); ?>
+		<?php echo $this->fetch('content'); ?>
 
-	<div id="footer">
+		<div id="footer">
+		</div>
 	</div>
 	<?php echo $this->element('sql_dump'); ?>
 </body>
