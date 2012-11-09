@@ -9,14 +9,18 @@ App::uses('AppController', 'Controller');
  */
 class SearchesController extends AppController {
 
+	public $components = array('Search.Prg');
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
-		$this->Search->recursive = 0;
+		$this->Prg->commonProcess();
+		$this->paginate = array(
+			'conditions' => $this->Search->parseCriteria($this->passedArgs)
+		);
 		$this->set('searches', $this->paginate());
 	}
-
 }
