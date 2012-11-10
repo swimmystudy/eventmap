@@ -10,8 +10,11 @@
 		<?php
 			echo $this->Html->css('bootstrap');
 			echo $this->Html->css('bootstrap-responsive');
+			echo $this->Html->css('http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css');
 			echo $this->Html->script('https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js');
 			echo $this->Html->script('bootstrap.min');
+			echo $this->Html->script('http://code.jquery.com/ui/1.9.1/jquery-ui.js');
+			echo $this->Html->script('http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js');
 			echo $this->fetch('meta');
 			echo $this->fetch('css');
 			echo $this->fetch('script');
