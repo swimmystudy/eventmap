@@ -29,7 +29,9 @@
                 selectOtherMonths: true,
                 minDate: 0,
                 onClose: function(s) {
-	    			$("#SearchTo").datepicker("option", "minDate", s).focus();
+					if (s) {
+		    			$("#SearchTo").datepicker("option", "minDate", s).focus();
+					}
                 }
             });
             $("#SearchTo").datepicker({
