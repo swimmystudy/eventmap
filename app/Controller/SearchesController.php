@@ -5,7 +5,7 @@ App::uses('AppController', 'Controller');
 /**
  * Searches Controller
  *
- * @property Searches $Searches
+ * @property Search $Search
  */
 class SearchesController extends AppController {
 
@@ -22,5 +22,19 @@ class SearchesController extends AppController {
 			'conditions' => $this->Search->parseCriteria($this->passedArgs)
 		);
 		$this->set('searches', $this->paginate());
+	}
+
+/**
+ * view method
+ *
+ * @param string $id
+ * @return void
+ */
+	public function view($id = null) {
+		$this->Search->id = $id;
+		if (!$this->Search->exists()) {
+			throw new NotFoundException(__('Invalid %s', __('search')));
+		}
+		$this->set('search', $this->Search->read(null, $id));
 	}
 }
